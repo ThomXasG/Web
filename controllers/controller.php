@@ -17,4 +17,16 @@
 
             include $respuesta;
         }
+
+        public function enlaceServiciosController() {
+            if (isset($_GET["action"])) {
+                $enlacesController = $_GET["action"];
+            } else {
+                $enlacesController = "servicios";
+            }
+
+            $respuesta = EnlacesPaginas::enlaceServiciosModel($enlacesController);
+
+            include $respuesta;
+        }
     }

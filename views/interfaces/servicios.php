@@ -62,6 +62,7 @@
                     <th scope="col">Apellido</th>
                     <th scope="col">Direccion</th>
                     <th scope="col">Telefono</th>
+                    <th scope="col">Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -74,6 +75,10 @@
                         echo "<td>".$row['est_apellido']."</td>";
                         echo "<td>".$row['est_direccion']."</td>";
                         echo "<td>".$row['est_telefono']."</td>";
+                        echo '<td>
+                        <button type="button" class="btn btn-primary">Editar</button>
+                        <button type="button" class="btn btn-danger">Eliminar</button>
+                        </td>';
                         echo "</tr>";
                     }
                 ?>
