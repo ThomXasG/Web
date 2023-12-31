@@ -12,7 +12,7 @@
     est_direccion='$direccion', est_telefono='$telefono' where est_cedula='$cedula'";
 
     if ($mysqli->query($sqlAct)) {
-        echo json_encode("Se actualizo");
+        header("Location: ../index.php?action=servicios");
     } else {
         echo json_encode("Error ".$sqlAct.$mysqli -> error);
     }

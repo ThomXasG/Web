@@ -11,7 +11,7 @@
     values('$cedula','$nombre', '$apellido', '$direccion', '$telefono')";
 
     if ($mysqli->query($sqlSelect)) {
-        echo json_encode("Se guardó");
+        header("Location: ../index.php?action=servicios");
     } else {
         echo json_encode("Error ".$sqlSelect.$mysqli -> error);
     }

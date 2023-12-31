@@ -6,7 +6,7 @@
     $sqlEliminar = "delete from estudiantes where est_cedula='$cedula'";
 
     if ($mysqli->query($sqlEliminar)) {
-        echo json_encode("Se elimino");
+        header("Location: ../index.php?action=servicios");
     } else {
         echo json_encode("Error ".$sqlEliminar.$mysqli -> error);
     }

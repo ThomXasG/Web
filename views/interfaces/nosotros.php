@@ -1,4 +1,4 @@
 <br>
 <br>
 <br>
-<h1>estás en nosotros</h1>
+<img src="./img/historia_facu.jpg" width="1200">
