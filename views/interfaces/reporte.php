@@ -1,6 +1,6 @@
 <?php
-    require ('fpdf186/fpdf.php');
-    require ('models/conexion.php');
+    require ('../../fpdf186/fpdf.php');
+    require ('../../models/conexion.php');
 
     $sqlSelect = "SELECT * FROM estudiantes";
     $result = $conn->query($sqlSelect);

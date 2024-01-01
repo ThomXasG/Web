@@ -18,14 +18,14 @@
             include $respuesta;
         }
 
-        public function enlaceServiciosController() {
+        public function enlaceReporteController() {
             if (isset($_GET["action"])) {
                 $enlacesController = $_GET["action"];
             } else {
                 $enlacesController = "servicios";
             }
 
-            $respuesta = EnlacesPaginas::enlaceServiciosModel($enlacesController);
+            $respuesta = EnlacesPaginas::enlaceReporteModel($enlacesController);
 
             include $respuesta;
         }

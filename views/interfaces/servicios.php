@@ -199,6 +199,7 @@
         </div>
         <br>
     </main>
+    <li><a style="display: block; margin-left: auto; margin-right: auto;" type="button" class="btn btn-warning" href="views/interfaces/reporte.php">Generar Reporte</a></li>
     <script>
         var url;
         function newUser(){
