@@ -199,7 +199,9 @@
         </div>
         <br>
     </main>
-    <li><a style="display: block; margin-left: auto; margin-right: auto;" type="button" class="btn btn-warning" href="views/interfaces/reporte.php">Generar Reporte</a></li>
+    <button style="display: block; margin-left: auto; margin-right: auto;"><a type="button" class="btn btn-warning" href="views/interfaces/reporte.php">Generar Reporte</a></button>
+    <br>
+    <button style="display: block; margin-left: auto; margin-right: auto;"><a type="button" class="btn btn-danger" href="models/cerrarSesion.php">Cerrar Sesión</a></button>
     <script>
         var url;
         function newUser(){
