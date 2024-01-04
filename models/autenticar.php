@@ -10,11 +10,15 @@
     
     if ($result->num_rows > 0) {
         // Usuario autenticado correctamente
+        session_start();
+        
+        $_SESSION['usuario'] = $usuario; // Puedes almacenar cualquier información del usuario aquí
+        $_SESSION['autenticado'] = true;
         header("Location: ../index.php?action=servicios");
         exit(); 
     } else {
         // Usuario no autenticado
-        echo "Nombre de usuario o contraseña incorrectos.";
+        header("Location: ../index.php?action=login&error=1");
     }
     
     // Cerrar la conexión

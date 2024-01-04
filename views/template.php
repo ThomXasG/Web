@@ -26,7 +26,15 @@
             <ul class="menu bg-red">
                 <li><a href="index.php?action=inicio">Inicio</a></li>
                 <li><a href="index.php?action=nosotros">Nosotros</a></li>
-                <li><a href="index.php?action=login">Servicios</a></li>
+                <?php
+                    session_start();
+                    
+                    if (isset($_SESSION['autenticado']) && $_SESSION['autenticado'] == true) {
+                        echo '<li><a href="index.php?action=servicios">Servicios</a></li>';
+                    } else {
+                        echo '<li><a href="index.php?action=login">Servicios</a></li>';
+                    }
+                ?>
                 <li><a href="index.php?action=contacto">Contacto</a></li>
             </ul>
         </nav>
