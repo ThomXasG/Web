@@ -63,7 +63,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="anadirUsuarioModalLabel">Añadir Estudiante</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -92,7 +92,7 @@
                                 </div>
                                 <br>
                                 <button type="submit" class="btn btn-primary">Agregar Estudiante</button>
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"></button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                             </form>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="crearUsuarioModalLabel">Editar Usuario</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>

@@ -12,11 +12,17 @@
     $pdf->Ln();
     $pdf->Cell(30,10, "Cedula", 1);
     $pdf->Cell(40,10, "Nombre", 1);
+    $pdf->Cell(40,10, "Apellido", 1);
+    $pdf->Cell(40,10, "Direccion", 1);
+    $pdf->Cell(40,10, "Telefono", 1);
 
     while($row = $result->fetch_assoc()) {
         $pdf->Ln();
         $pdf->Cell(30,10, $row['est_cedula'], 1);
         $pdf->Cell(40,10, $row['est_nombre'], 1);
+        $pdf->Cell(40,10, $row['est_apellido'], 1);
+        $pdf->Cell(40,10, $row['est_direccion'], 1);
+        $pdf->Cell(40,10, $row['est_telefono'], 1);
 
         /*
         $cedula = $row->est_cedula;
