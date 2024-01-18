@@ -202,6 +202,30 @@
     <button style="display: block; margin-left: auto; margin-right: auto;"><a type="button" class="btn btn-warning" href="views/interfaces/reporte.php">Generar Reporte</a></button>
     <br>
     <button style="display: block; margin-left: auto; margin-right: auto;"><a type="button" class="btn btn-danger" href="models/cerrarSesion.php">Cerrar Sesión</a></button>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Buscar por Cedula
+                    </div>
+                    <div class="card-body">
+                    <form action="./models/selectEstInd.php" method="POST">
+                        <div class="form-group">
+                        <label for="Cedula">Cedula:</label>
+                        <input type="text" class="form-control" id="cedula" name="cedula" placeholder="Buscar por Cedula">
+                        </div>
+                        <br>
+                        <button style="display: block; margin-left: auto; margin-right: auto;" type="submit" class="btn btn-primary">Buscar</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
     <script>
         var url;
         function newUser(){
